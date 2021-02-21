@@ -2,14 +2,15 @@
 //
 
 #include <iostream>
+#include <algorithm>
 
 int main(int argc, char* argv[])
 {
-	for (size_t i = 0; i < argc; i++)
-	{
-		//this part show argument!
-		std::cout << argv[i] << std::endl;
-	}
+	std::for_each(argv, (argv + argc), [](const char* argument)
+		{
+			//this part show argument!
+			std::cout << argument << std::endl;
+		});
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
