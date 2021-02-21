@@ -10,6 +10,8 @@ int main(int argc, char* argv[])
 		{
 			std::cout << argument << std::endl;
 		});
+
+	std::cout << "cool featch!" << std::endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
