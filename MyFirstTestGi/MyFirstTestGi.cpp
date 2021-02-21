@@ -3,12 +3,12 @@
 
 #include <iostream>
 
-int main()
+int main(int argc, char* argv[])
 {
-    std::cout << "Hello World!" << std::endl;
-    std::cout << "Hello World!" << std::endl;
-    std::cout << "Hello World!" << std::endl;
-    std::cout << "Hello World!" << std::endl;
+	for (size_t i = 0; i < argc; i++)
+	{
+		std::cout << argv[i] << std::endl;
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
